@@ -115,3 +115,18 @@ body{
 .requirements li.invalid {
   color: #ef4444;
 }
+
+.requirements li::before {
+    margin-right: 8px;
+    font-weight: bold;
+}
+
+.requirements li.valid::before {
+  content: "✓";
+  color: #22c55e;
+}
+
+.requirements li.invalid::before {
+  content: "✗";
+  color: #ef4444;
+}

@@ -1,4 +1,4 @@
-// Get elements from the HTML
+// Get elements from the HTMLda
 const passwordInput = document.getElementById("passwordInput");
 const togglePassword = document.getElementById("togglePassword");
 const strengthText = document.getElementById("strengthText");
@@ -75,3 +75,4 @@ function updateRequirement(element, isValid) {
     element.classList.remove("valid");
   }
 }
+checkPasswordStrength();
