@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Password Strength Checker</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+    <section class="password-card">
+      <h1>Password Strength Checker</h1>
+
+      <p class="description">
+        A simple cybersecurity tool that checks whether a password is weak,
+        medium, or strong based on length, numbers, symbols, and uppercase letters.
+      </p>
+
+      <div class="input-group">
+        <input 
+          type="password" 
+          id="passwordInput" 
+          placeholder="Enter your password"
+        />
+
+        <button id="togglePassword">Show</button>
+    </div>
+
+    <p id="strengthText">Password strength: Not checked</p>
+
+    <div class="strength-bar">
+    <div id="strengthFill"></div>
+    </div>
+
+    <ul class="requirements">
+        <li id="lengthCheck">At least 8 characters</li>
+        <li id="uppercaseCheck">Contains uppercase letters</li>
+        <li id="lowercaseCheck">Contains lowercase letters</li>
+        <li id="numberCheck">Contains a numbers</li>
+        <li id="symbolCheck">Contains a symbol</li>
+    </ul>
+</section>
+  </main>
+
+<script src="script.js"></script>
+</body>
+</html>
+
